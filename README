@@ -9,9 +9,26 @@ The app also collecting historical outage data which will be displayed
 graphically and be available for download.
 
 INSTALLATION / DEVELOPMENT
-It's a Rails app.  Configure a cron job to run the rake task every
-minute.  Use archive/supercat.sql as the initial / development database
+It's a Rails app.  
+
+* Configure a cron job to run the rake task every
+minute.  
+
+* Use archive/supercat.sql as the initial / development database
 (it has the zipcode information).
+
+* Create Twitter tokens and add them to 
+config/twitter_credentials.rb:  To create the tokens, log in to 
+Twitter and go to http://dev.twitter.com/apps. Register
+a new app, and you'll see your token values.  Create the file
+with these entries:
+
+TWITTER_CONSUMER_KEY = '...'
+TWITTER_CONSUMER_SECRET = '...'
+TWITTER_ACCESS_TOKEN = '...'
+TWITTER_ACCESS_TOKEN_SECRET = '...'
+
+
 
 LICENSE 
 This app and all data is licensed under the GNU Public
