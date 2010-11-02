@@ -12,7 +12,8 @@ INSTALLATION / DEVELOPMENT
 It's a Rails app.  
 
 * Configure a cron job to run the rake task every
-minute.  
+minute.  E.g.
+* * * * * cd /home/www/apps/supercat; /opt/ree/bin/rake --silent events:check_and_send
 
 * Use archive/supercat.sql as the initial / development database
 (it has the zipcode information).
