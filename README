@@ -1,0 +1,19 @@
+A real-time app that gives people immediate information about the
+power outage (and soon, other problems) they're experiencing.
+
+People will get the info they need even if they've never heard of
+Super Cat. All tweets and posts are geo-tagged: During an outage,
+search for "tweets near me".
+
+The app also collecting historical outage data which will be displayed
+graphically and be available for download.
+
+INSTALLATION / DEVELOPMENT
+It's a Rails app.  Configure a cron job to run the rake task every
+minute.  Use archive/supercat.sql as the initial / development database
+(it has the zipcode information).
+
+LICENSE 
+This app and all data is licensed under the GNU Public
+License.
+

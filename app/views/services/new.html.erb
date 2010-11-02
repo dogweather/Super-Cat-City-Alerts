@@ -1,0 +1,35 @@
+<h1>New service</h1>
+
+<% form_for(@service) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :main_url %><br />
+    <%= f.text_field :main_url %>
+  </p>
+  <p>
+    <%= f.label :events_url %><br />
+    <%= f.text_field :events_url %>
+  </p>
+  <p>
+    <%= f.label :kind %><br />
+    <%= f.text_field :kind %>
+  </p>
+  <p>
+    <%= f.label :event_tel %><br />
+    <%= f.text_field :event_tel %>
+  </p>
+  <p>
+    <%= f.label :twitter %><br />
+    <%= f.text_field :twitter %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', services_path %>

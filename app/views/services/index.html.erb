@@ -1,0 +1,30 @@
+<h1>Listing services</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Main url</th>
+    <th>Events url</th>
+    <th>Kind</th>
+    <th>Event tel</th>
+    <th>Twitter</th>
+  </tr>
+
+<% @services.each do |service| %>
+  <tr>
+    <td><%=h service.name %></td>
+    <td><%=h service.main_url %></td>
+    <td><%=h service.events_url %></td>
+    <td><%=h service.kind %></td>
+    <td><%=h service.event_tel %></td>
+    <td><%=h service.twitter %></td>
+    <td><%= link_to 'Show', service %></td>
+    <td><%= link_to 'Edit', edit_service_path(service) %></td>
+    <td><%= link_to 'Destroy', service, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New service', new_service_path %>

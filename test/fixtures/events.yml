@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  zipcode: MyString
+  happened_at: 2010-10-31 21:52:26
+  fix_eta: 2010-10-31 21:52:26
+  latitude: MyString
+  longitude: MyString
+
+two:
+  zipcode: MyString
+  happened_at: 2010-10-31 21:52:26
+  fix_eta: 2010-10-31 21:52:26
+  latitude: MyString
+  longitude: MyString
